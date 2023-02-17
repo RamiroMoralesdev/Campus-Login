@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+img{
+    width: 30px;
+    display: inline-block;
+    margin-left: 228px;
+    position: relative;
+    bottom: 59px;
+}
+input{
+    border: 2px solid green;
+    border-radius: 20px;
+}
+button{
+  border: 20px solid black;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+button:hover{
+    border-color: green;
+    background-color: green;
+    border-radius: 0;
+    color: burlywood;
+}
+.hr-1{
+    width: 420px;
+    border-color: black;
+    color: black;
+
+}

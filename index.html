@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comienza Ya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>UNIVERSIDAD DE FUNES</h1> <hr class="hr-1">
+    <h3>Registro</h3>
+
+    <div>
+        <p>Nombre?</p>
+        <input type="text" placeholder="Ingresa tu nombre">
+    </div>
+
+    <div>
+        <p>Apellido?</p>
+        <input type="text" placeholder="Ingresa tu Apellido">
+    </div>
+
+    <div>
+        <p>Direccion de Correo Electronico</p>
+        <input type="email">
+    </div>
+
+    <div>
+        <p>Crea una Contraseña segura</p>
+        <input type="password" id="pass" oninput="changeColor()">
+    </div>
+
+    <script>
+        function changeColor(){
+            var input = document.getElementById("pass");
+            if(input.value.length < 10) { 
+                input.style.borderColor = "red";
+                    } else {
+                        input.style.borderColor = "green";
+                    }
+                }
+    </script>
+
+    <img src="qes.png" alt="Ayuda">
+    <hr>
+    <p>Cual es tu sexo?</p>
+    <div id="Genero">
+        <input type="checkbox"> Hombre
+        <input type="checkbox"> Mujer <br>
+        <input type="checkbox"> No binario
+    </div> <br>
+    <button>Ingresar</button>
+</body>
+</html>
